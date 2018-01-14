@@ -84,16 +84,7 @@ csh -c 'crunch 0 6 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345678
 
 #csh -c 'airmon-ng start ath0' # start sniffing wifi traffic
 
-#if ($status != 0) then # missing program aircrack-ng
-#	echo "Error: Please install aircrack-ng suite" # prompt user
-#	exit # exit
-#endif
-
 #echo -n "Trying to Smell Bad Code Smells ..." # user log
-
-crunch 0 6 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 | aircrack-ng --bssid aa:aa:aa:aa:aa:aa -w- handshakefile.cap
-
-
 #csh -c 'airodump-ng '$phy' >& /dev/stdout | tee -a captures.txt' # capture wifi traffic
 
 sleep 2
@@ -109,13 +100,6 @@ ifconfig $wlan down # down wifi
 ifconfig $wlan up # down wifi
 
 echo "Success" # user log
-			
-
 
 setenv setprompt $PWD
-#set path = $PATH:/directory/to/add
 set currentDirectory = $PWD
-
-#eval -r wlan0
-#echo $PWD
-#echo 'Path:' & path
