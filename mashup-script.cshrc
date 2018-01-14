@@ -75,8 +75,7 @@ echo -n "Press Ctrl ^C when ready ..." # WiFi Monitor Mode enabled
 echo "Enter the bssid to crack" # WiFi Monitor Mode enabled
 set bssid = $<
         #echo " $uname!"
-crunch 0 6 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 | aircrack-ng --bssid $bssid -w- handshakefile.cap
-
+#crunch 0 6 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 | aircrack-ng --bssid $bssid -w- handshakefile.cap
 
 sleep 1
 
